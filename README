@@ -1,0 +1,18 @@
+DEPENDENCIES 
+npm i express
+npm i -D nodemon    
+npm i pug
+npm i -D tailwindcss autoprefixer postcss postcss-cli
+npx tailwindcss init -p
+npm i sequelize mysql2
+npm i dotenv
+npm i express-validator
+npm i bcrypt
+npm i nodemailer
+npm i csurf cookie-parser
+npm i jsonwebtoken 
+npm i -D webpack webpack-cli
+npm i -D concurrently
+npm i dropzone@5.9.3
+npm i multer 
+npm install @fortawesome/fontawesome-free

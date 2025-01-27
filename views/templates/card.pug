@@ -1,0 +1,13 @@
+div(class="bg-white shadow rounded-lg")
+    img(class="object-cover h-72 w-full" src=`/uploads/${propiedad.imagen}`, alt=`imagen de la propiedad: ${propiedad.titulo}`)
+    div(class="p-5 space-y-2")
+        h3(class="text-2xl font-bold ")= propiedad.titulo
+        div(class="grid grid-cols-3 md:grid-cols-3 gap-1 mt-5 mb-5")
+            p(class=" text-gray-600 font-bold uppercase") Categoría:
+                i(class="fa fa-building")  
+                    span(class=" text-gray-600 font-light")= propiedad.categoria.nombre
+            p(class=" text-gray-600 font-bold uppercase") Precio:
+                span(class=" text-gray-600 font-light")= propiedad.precio.precio
+                
+    a(href=`/propiedad/${propiedad.id}` class="bg-indigo-500 block mt-5 p-2 text-center text-white font-bold rounded") Ver más  
+        i(class="fas fa-eye")
